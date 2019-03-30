@@ -8,7 +8,7 @@ const Title = props => {
       : style.taskQuantity;
   const yet = props.data.length == 0 ? "yet..." : "It's time Todo something!";
   return (
-    <div>
+    <div className={style.header}>
       <h1>Todo app</h1>
       <p>
         You have <span className={taskQuantity}>{props.data.length}</span>{" "}
